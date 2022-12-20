@@ -39,6 +39,10 @@ resource fluxConfig 'Microsoft.KubernetesConfiguration/fluxConfigurations@2022-0
         path: './clusters/staging'
         syncIntervalInSeconds: 120
       }
+      ngnix: {
+        path: './ngnix'
+        syncIntervalInSeconds: 120
+      }
     }
   }
   dependsOn: [
